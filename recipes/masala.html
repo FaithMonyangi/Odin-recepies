@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASALA RECIPE</title>
+</head>
+<style>
+    body{
+        background-color: #222831;
+        margin: 0;
+    }
+    .hero{
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 30px;
+        position: relative;
+    }
+    .hero_wrapper{
+        height: 60vh;
+        position: relative;
+    }
+    .hero_img{
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 60vh;
+        object-fit: cover;
+        position: absolute;
+        width: 100%;
+        mask-image: linear-gradient(
+        rgb(0,0,0,1),
+        rgb(0,0,0,0.4) 80%,
+        transparent); 
+  
+    }
+    .hero_tittle{
+        display: flex;
+        justify-content: center;
+        color: black;
+        text-transform: capitalize;
+    }
+    .container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .container_description{
+        font-size: 20px;
+
+    }
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        color: #ffffff;
+        border: 5px solid #3b630c;
+        border-radius: 20px;
+        padding: 10px;
+        margin: 20px auto;
+        margin-block: 20px;
+        gap: 20px;
+        font-size: 30px;
+        font-weight: 400;
+        width: 50%;
+    }
+    .timer{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .ingredients{
+    
+        justify-content: center;
+    }
+    .ingredients_tittle,
+    .steps_tittle{
+        font-weight: 400;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        border-radius: 20px;
+        padding: 20px;
+        width: 40%;
+        margin: 0 auto;
+        position: relative;
+        background: linear-gradient(
+         to right,
+        #d7dd82,
+        #d1db4a
+        );
+    }
+
+    .ingredients_lists
+    {
+        margin: 10px auto;
+        max-width: 1200px;
+        gap: 20px;
+        display: grid;
+        grid-template-columns:repeat(2, 1fr);
+    }
+    .ingredients_lists,
+    .recipe_steps{
+        font-size: 25px;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    .footer_tittle{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+
+    }
+    .footer_content{
+        font-weight: 300;
+    }
+</style>
+<body>
+    <header class="hero">
+        <div class="hero_wrapper">
+            <img src="https://ministryofcurry.com/wp-content/uploads/2021/01/air-fryer-spicy-french-fries_-2.jpg" alt="" class="hero_img">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="container_description">
+            <h1 class="hero_tittle">Masala recipe</h1>
+            <p>A common kenyan street food</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        1hour
+        <div class="timer"></div>
+            20minutes
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <div class="ingredients_tittle">
+            Ingredients
+        </div>
+        <ul class="ingredients_lists">
+            <li>15 oz frozen fry(400 g), thawed</li>
+            <li>½ cup tomato(100 g), chopped</li>
+            <li>½ cup tomato(100 g), chopped</li>
+            <li>natural yogurt, to garnish</li>
+            <li>fresh coriander, to garnish</li>
+            <li>½ cup tomato(100 g), chopped</li>
+            <li>½ tablespoon lemon, juiced</li>
+            <li>½ teaspoon salt</li>
+            <li>1 teaspoon coriander powder</li>
+            <li>1 teaspoon ground cumin</li>
+            <li>1 teaspoon chili powder</li>
+            <li>½ onion, diced</li>
+            <li>1 tablespoon ginger garlic paste</li>
+            <li> 1 tablespoon butter, for frying</li>
+            <li>3 tablespoons olive oil, for frying</li>
+        </ul>
+    </div>
+
+    <div class="steps">
+        <div class="steps_tittle">
+            steps
+        </div>
+        <ol class="recipe_steps">
+            <li>Preheat oven to 350°F (180°C).</li>
+            <li>Spread out the fries on a baking tray and bake for 20 minutes.</li>
+            <li>While the fries are baking, prepare the masala.</li>
+            <li>Heat a large skillet over medium heat and add the oil and butter.</li>
+            <li>Stir in the ginger garlic paste and fry for a couple of minutes.</li>
+            <li>Add the onion and fry for a few minutes until soft.</li>
+            <li>Sprinkle in the chili powder, ground cumin, ground coriander, salt, and lemon juice and stir continuously for another minute.</li>
+            <li>Pour in the chopped tomatoes and fry for several more minutes, until the sauce has thickened.</li>
+            <li> Add the fries to the pan and stir until evenly coated.</li>
+            <li>Drizzle some yogurt on top and garnish with fresh coriander.</li>
+        </ol>
+    </div>
+
+    <footer class="footer_tittle">
+        <h3><em>Quick Tip</em></h3>
+        <div class="footer_content">
+            <p>**To be served when hot**</p> 
+        </div>
+    </footer>
+</body>
+</html>

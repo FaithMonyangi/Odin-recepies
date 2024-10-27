@@ -3,43 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pilau Recipe</title>
+    <title>PILAU RECIPE</title>
 </head>
+<style>
+    body{
+        margin: 0;
+        background-color:#222831;
+    }
+    .content.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+
+}
+.hero_wrapper{
+    position: relative;
+    padding-bottom: 60vh;
+
+}
+.hero_img{
+        width: 100%;
+        height: 60vh;
+        left: 0;
+        right: 0;
+        top: 0;
+        position: absolute;
+        object-fit: cover;
+        mask-image: linear-gradient(
+        rgb(0,0,0,1),
+        rgb(0,0,0,0.4) 30%,
+        transparent); 
+}
+.hero_tittle {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+.container_description {
+    color: #ffffff66;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 50%;
+    height: 70px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border: 5px solid #3b630c;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+    margin: 20px auto;
+    gap: 30px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ingredients,
+.steps{
+    margin-block: 2rem;
+}
+
+.ingredients_tittle,
+.steps_tittle{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 3rem;
+    position: relative;
+    background:linear-gradient(
+        to right,
+        #d7dd82,
+        #d1db4a
+    );
+    border-radius: 10px;
+}
+
+.ingredients h2,
+.steps h2{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    text-shadow: 0 0 5px #fff3;
+    margin-block: 1.5rem;
+    color: black;
+}
+.ingredients_lists{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 20px;
+
+}
+
+.ingredients_lists,
+.recipe_steps
+{
+
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ffffff66 ;
+    line-height: 1.5;
+}
+
+.footer-tittle{
+    display: block;
+    font-size: 20px;
+   text-align: center;
+}
+.footer-content{
+    font-weight: 300;
+}    
+</style>
 <body>
-    <h1>Pilau Recipe</h1>
-    <img src="https://cheflolaskitchen.com/wp-content/uploads/2019/12/DSC0362-East-african-pilau-pelau-500x500.jpg" alt="An image of beef pilau" width="200px" height="200px">
-    <h2>The Origin Of Pilau</h2>
-    <p>Pilaf, pilav or pilau is a rice dish, usually sautéed, or in some regions, a wheat dish, whose recipe usually involves cooking in stock or broth, adding spices, and other ingredients such as vegetables or meat, and employing some technique for achieving cooked grains that do not adhere to each other.</p>
-    <h2>Ingredients</h2>
-    <ul>
-        <li>2 tbsp oil</li>
-        <li>300 grams beef cubes</li>
-        <li>2 medium onions, chopped</li>
-        <li>1 1/2 tbsp pilau masala</li>
-        <li>2 medium carrots, grated</li>
-        <li>1 tsp chili powder</li>
-        <li>2-3 bay leaves</li>
-        <li>1 1/2 cups hot water (to cook the beef)</li>
-        <li>1 1/2 cups Daawat Basmati Rice, rinsed and soaked</li>
-        <li>Salt to taste</li>
-        <li>Freshly ground black pepper</li>
-        <li>1 bulb of garlic, cut the top off to expose the cloves of garlic</li>
-        <li>1 tsp coriander powder</li>
-        <li>1 tsp coriander powder</li>
-        <li> 3 cups hot water (to cook the rice)</li>
-        <h2>Steps</h2>
-    </ul>
-    <ol type="1">
-        <li>Heat oil in a large pot. Add the beef in the oil in batches making sure not to over crowd the pot. You want to sear the beef so it browns and not steams. Let cook for 3-4 minutes until browned on all sides.</li>
-        <li>Add the onions and stir for 1-2 minutes.</li>
-        <li>Add the carrots, season with salt & pepper, chili powder, pilau masala and bay leaves and stir. Let cook for another 1-2 minutes or until the carrots soften.</li>
-        <li>Add hot water (to cook the beef), cover the pot with a lid and let simmer for 45 minutes-1 hour until the meat is very tender.</li>
-        <li>Layer the rice onto the meat, season with some more salt, pour in the hot water (to cook the rice) and let simmer uncovered for 10-12 minutes.</li>
-        <li>Sprinkle coriander powder onto the almost cooked rice and push the bulb of garlic into the rice making sure that the exposed cloves are submerged in the rice.</li>
-        <li>Cover and reduce the temperature and let sit for 12-15 minutes.</li>
-        <li>Remove the bulb of garlic and bay leaves from the rice, and serve the pilau immediately.</li>
-    </ol>
-    <h3><em>Quick Tip</em></h3>
-    <p>**The meal is best enjoyed when accompanied with some Kachumbari**</p>
+    <header class="hero">
+        <div class="hero_wrapper">
+            <img src="https://lh3.googleusercontent.com/4oBHZ16tfSzB_KjTKb6rKpT2fpuWLXMobIER3XJd8tOln3V7IhMHWCS2DmittBTaA5EPd2sfx2YiD8YgqD54CDZbynSKAHNDd96YYymt9g" alt="An image of beef pilau" class="hero_img">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="container_description">
+            <h1 class="hero_tittle">Pilau recipe</h1>
+            <p>A meal from the coast thats real delicious</p>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        2hours 
+         <div class="timer">
+         40minutes
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <div class="ingredients_tittle">
+            <h2>Ingredients</h2>
+        </div>
+            <ul class="ingredients_lists">
+                <li>2 tbsp oil</li>
+                <li>300 grams beef cubes</li>
+                <li>2 medium onions, chopped</li>
+                <li>1 1/2 tbsp pilau masala</li>
+                <li>2 medium carrots, grated</li>
+                <li>1 tsp chili powder</li>
+                <li>2-3 bay leaves</li>
+                <li>1 1/2 cups hot water (to cook the beef)</li>
+                <li>1 1/2 cups Daawat Basmati Rice, rinsed and soaked</li>
+                <li>Salt to taste</li>
+                <li>Freshly ground black pepper</li>
+                <li>1 bulb of garlic, cut the top off to expose the cloves of garlic</li>
+                <li>1 tsp coriander powder</li>
+                <li>1 tsp coriander powder</li>
+                <li> 3 cups hot water (to cook the rice)</li>
+            </ul>
+    </div>
+
+    <div class="steps">
+        <div class="steps_tittle">
+            <h2>Steps</h2>
+        </div>
+        <ol class="recipe_steps">
+            <li>Heat oil in a large pot. Add the beef in the oil in batches making sure not to over crowd the pot. You want to sear the beef so it browns and not steams. Let cook for 3-4 minutes until browned on all sides.</li>
+            <li>Add the onions and stir for 1-2 minutes.</li>
+            <li>Add the carrots, season with salt & pepper, chili powder, pilau masala and bay leaves and stir. Let cook for another 1-2 minutes or until the carrots soften.</li>
+            <li>Add hot water (to cook the beef), cover the pot with a lid and let simmer for 45 minutes-1 hour until the meat is very tender.</li>
+            <li>Layer the rice onto the meat, season with some more salt, pour in the hot water (to cook the rice) and let simmer uncovered for 10-12 minutes.</li>
+            <li>Sprinkle coriander powder onto the almost cooked rice and push the bulb of garlic into the rice making sure that the exposed cloves are submerged in the rice.</li>
+            <li>Cover and reduce the temperature and let sit for 12-15 minutes.</li>
+            <li>Remove the bulb of garlic and bay leaves from the rice, and serve the pilau immediately.</li>
+        </ol>
+    </div>
+
+    <footer class="footer-tittle">
+        <h3><em>Quick Tip</em></h3>
+        <div class="footer-content">
+            <p>**The meal is best enjoyed when accompanied with some Kachumbari**</p>
+
+        </div>
+    </footer>  
 </body>
 </html>

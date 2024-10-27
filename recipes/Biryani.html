@@ -3,44 +3,219 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chicken-Biryani-Recipe</title>
+    <title>CHICKEN-BIRYANI-RECIPE</title>
 </head>
+<style>
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-color:#222831;
+    margin: 0;
+  
+}
+
+.content.container {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+        overflow-x: hidden;
+        overflow-y: visible;
+    }
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.hero_wrapper {
+    position: relative;
+    padding-bottom: 50vh;
+}
+.hero_tittle {
+    font-size: 40px;
+    color: #ffffff;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 2;
+    top: 0; 
+    left: 50%; 
+    transform: translateX(-50%);
+}
+
+
+
+.hero_img {
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+    mask-image: linear-gradient(
+        rgb(0,0,0,1),
+        rgb(0,0,0,0.4) 20%,
+        transparent); 
+}
+
+.container_description {
+    color: #ffffff66;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.wrapper {
+    max-width: 50%;
+    height: 70px;
+    font-size: 1.5rem;
+    color: #ffffff;
+    border: 5px solid #3b630c;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block: 20px;
+    margin: 20px auto;
+    gap: 30px;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ingredients,
+.steps{
+    margin-block: 2rem;
+}
+
+.ingredients_tittle,
+.steps_tittle{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    height: 3rem;
+    position: relative;
+    background:linear-gradient(
+        to right,
+        #d7dd82,
+        #d1db4a
+    );
+    border-radius: 10px;
+}
+
+.ingredients h2,
+.steps h2{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    text-shadow: 0 0 5px #fff3;
+    margin-block: 1.5rem;
+    color: black;
+}
+.ingredients_lists{
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    gap: 20px;
+
+}
+
+.ingredients_lists,
+.recipe_steps
+{
+
+    margin-top: 20px;
+    font-size: 30px;
+    color: #ffffff66 ;
+    line-height: 1.5;
+}
+
+.footer-tittle{
+    display: block;
+    font-size: 20px;
+   text-align: center;
+
+}
+.footer-content{
+    font-weight: 300;
+
+}
+
+</style>
 <body>
-    <h1>Biryani Recipe</h1>
-    <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="An image of chicken Biryani" width="200px" height="200px">
-    <h2>The origin of Biryani</h2>
-    <p>Biryani is a mixed rice dish, mainly popular in South Asia. It is made with rice, some type of meat and spices. To cater to vegetarians, in some cases, it is prepared by substituting vegetables or paneer for the meat. Sometimes eggs and/or potatoes are also added.</p>
-    <h2>Ingredients</h2>
-    <ul>
-        <li>4 tablespoons vegetable oil, divided</li>
-        <li>2 large onions, finely chopped</li>
-        <li>4 small potatoes, peeled and halved</li>
-        <li>2 cloves garlic, minced</li>
-        <li>1 tablespoon minced fresh ginger root</li>
-        <li>2 medium tomatoes, peeled and chopped</li>
-        <li>1 teaspoon salt</li>
-        <li>1 teaspoon ground cumin</li>
-        <li>½ teaspoon chili powder</li>
-        <li>½ teaspoon ground black pepper</li>
-        <li>½ teaspoon ground turmeric</li>
-        <li>2 tablespoons plain yogurt</li>
-        <li>2 tablespoons chopped fresh mint leaves</li>
-        <li>½ teaspoon ground cardamom</li>
-        <li>1 (2 inch) piece cinnamon stick</li>
-        <li>3 pounds boneless, skinless chicken pieces cut into chunks</li>
-        <li>1 pound basmati rice</li>
-        <li>2 ½ tablespoons vegetable oil</li>
-        <li>1 large onion, diced</li>
-        <li>5 pods cardamom</li>
-        <li>3 whole cloves</li>
-        <li>1 (1 inch) piece cinnamon stick</li>
-        <li>½ teaspoon ground ginger</li>
-        <li>1 pinch powdered saffron</li>
-        <li>4 cups chicken stock</li>
-        <li>1 ½ teaspoons salt</li>
-        <h2>Steps</h2>
+    <header class="hero">
+        <div class="hero_wrapper">
+            <img src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg" alt="An image of chicken Biryani" class="hero_img">
+        </div>
+    </header>
+
+    <div class=" content container">
+        <div class="container_description">
+            <h1 class="hero_tittle">Chicken-Biryani-Recipe</h1>
+            <p>This swahili meal is quite an easy and intresting one to prepare</p>
+        </div>
+    <div class="wrapper">
+        3hours 
+         <div class="timer">
+         40minutes
+        </div>
+    </div>
+
+    <div class="ingredients">
+        <div class="ingredients_tittle">
+            <h2>Ingredients</h2>
+        </div>
+        <ul class="ingredients_lists">
+            <li>4 tablespoons vegetable oil, divided</li>
+            <li>2 large onions, finely chopped</li>
+            <li>4 small potatoes, peeled and halved</li>
+            <li>2 cloves garlic, minced</li>
+            <li>1 tablespoon minced fresh ginger root</li>
+            <li>2 medium tomatoes, peeled and chopped</li>
+            <li>1 teaspoon salt</li>
+            <li>1 teaspoon ground cumin</li>
+            <li>½ teaspoon chili powder</li>
+            <li>½ teaspoon ground black pepper</li>
+            <li>½ teaspoon ground turmeric</li>
+            <li>2 tablespoons plain yogurt</li>
+            <li>2 tablespoons chopped fresh mint leaves</li>
+            <li>½ teaspoon ground cardamom</li>
+            <li>1 (2 inch) piece cinnamon stick</li>
+            <li>3 pounds boneless, skinless chicken pieces cut into chunks</li>
+            <li>1 pound basmati rice</li>
+            <li>2 ½ tablespoons vegetable oil</li>
+            <li>1 large onion, diced</li>
+            <li>5 pods cardamom</li>
+            <li>3 whole cloves</li>
+            <li>1 (1 inch) piece cinnamon stick</li>
+            <li>½ teaspoon ground ginger</li>
+            <li>1 pinch powdered saffron</li>
+            <li>4 cups chicken stock</li>
+            <li>1 ½ teaspoons salt</li>
         </ul>
-        <ol type="1">
+    </div>
+
+    <div class="steps">
+        <div class="steps_tittle">
+            <h2>Steps</h2>
+        </div>
+        <ol class="recipe_steps">
             <li>Gather all ingredients.</li>
             <li>Heat 2 tablespoons of oil in a large skillet. Fry potatoes in hot oil until lightly browned, about 3 to 5 minutes. Remove to a paper towel-lined plate to drain; set aside.</li>
             <li>Add remaining 2 tablespoons of oil to the skillet. Add onions, garlic, and fresh ginger; cook and stir until onion is soft and golden. Add tomatoes, salt, cumin, chili powder, pepper, and turmeric; cook, stirring constantly, for 5 minutes.</li>
@@ -53,7 +228,14 @@
             <li>Reduce heat to very low, cover with a tight-fitting lid, and steam for 20 minutes without lifting the lid or stirring.</li>
             <li>Spoon biryani onto a warm serving dish.</li>
         </ol>
-    <h3><em>Quick Tip</em></h3>
-    <p>**Use Basmati rice for best results**</p>
+    </div>
+
+    <footer class="footer-tittle">
+        <div class="footer-content">
+            <h3><em>Quick Tip</em></h3>
+        </div>
+        <p>**Use Basmati rice for best results**</p>
+    </footer>   
+</div> 
 </body>
 </html>
